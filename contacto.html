@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Rajdhani&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8ad784097e.js" crossorigin="anonymous"></script>
+
+</head>
+<body class="hidden">
+    <header style="background: none; height:60px">
+        <nav id="nav2" class="nav2">
+            <div class="contenedor-nav">
+                <div class="icono" id="open">
+                    <span>&#9776;</span>
+                </div>
+                <div class="enlaces" id="enlaces">
+                    <a href="index.html" id="enlace-inicio" class="btn-header">Inicio</a>
+                    <a href="clientes.html" id="enlace-clientes" class="btn-header">Clientes</a>
+                    <a href="nosotros.html" id="enlace-nosotros" class="btn-header">Nosotros</a><!--
+                    <a href="#" id="enlace-trabajo" class="btn-header">Trabajos</a>
+                    <a href="#" id="enlace-contacto" class="btn-header">Contacto</a>-->
+                </div>
+                <div class="logo">
+                    <img src="img/logonaranja.svg" alt="">
+                </div>
+                <div class="icono">
+                    <a href="contacto.html">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+        <div class="block-blanco" id="pag-web">
+            <div class="container-filas-celeste" style="justify-content:center;">
+                <div class="container-celeste-form">
+                    <h2 style="color:#FF9933;"><b>contÁctAnos</b></h2>
+                    <form method="post" class="contactForm">
+                        <ul>
+                            <li>
+                                <input type="text" class="form-control" id="name" name="user_name" placeholder="Nombre">
+                            </li>
+                            <li>
+                                <input type="email" class="form-control" id="mail" name="user_mail" placeholder="Correo electrónico">
+                            </li>
+                            <li>
+                                <input type="text" class="form-control" id="name" name="user_phone" placeholder="Teléfono">
+                            </li>
+                            <li>
+                                <textarea id="msg" class="textarea" name="user_message" placeholder="Mensaje"></textarea>
+                            </li>
+                        </ul>
+                        <div class="boton">
+							<input type="submit" value="Enviar">
+							<div class="submitting"></div>
+						</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main> 
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="block-foo-1">
+                <img src = "img/logoblanco.svg" style="height:70px;">
+                <p><b>Sobre Nosotros</b></p>
+                <p>Somos un grupo de desarrolladores orientados a realizar proyectos innovadores.</p>
+                <a href="https://facebook.com/AODPERU"><img src = "img/fbb.svg" style="height:40px;"></a>
+                <a href="https://facebook.com/AODPERU"><img src = "img/twb.svg" style="height:40px;"></a>
+            </div>
+            <div class="block-foo-2"> 
+                <dl>
+                    <dt>Nuestros Servicios</dt>
+                    <dd><a href="#software-web">Software Web</a></dd>
+                    <dd><a href="#pag-web">Desarrollo de Páginas Web</a></dd>
+                    <dd><a href="#app-movil">Aplicaciones Móviles</a></dd>
+                    <dd><a href="#extra">Soporte Técnico</a></dd>
+                    <dd><a href="#extra">Venta de Equipos</a></dd>
+                </dl>
+            </div>
+        
+            <div class="block-foo-3"> 
+                <dl>
+                    <dd><i class="fas fa-phone-alt" style="font-size:20px"></i> (056) 535452</dd>
+                    <dd><i class="far fa-envelope" style="font-size:20px"></i> <a href="mailto:contacto@aod.pe">contacto@aod.pe</a></dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/filtro.js"></script>
+</body>
+</html>
