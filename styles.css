@@ -61,10 +61,9 @@ p{
   /* Header */
   
 header{
-    width: 100%;
+    max-width: 100%;
     height:800px;
-    background: url(img/fondo.jpg);
-    background-position: center bottom;
+    background: url(img/fondo.jpg) no-repeat center bottom;
     background-size: cover;
 }
   
@@ -336,6 +335,16 @@ dl dd a{
     align-items: center;
 }
 
+.container-col-1{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 32px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .container-filas{
     height: auto;
     align-items: center;
@@ -372,8 +381,9 @@ dl dd a{
     text-align: left;
     width: 100%;
     font-size: 16px;
-    background-position: center top;
-    background-image: url(img/footer.svg);
+    
+    background-image: url(img/footer.png);
+    background-position: left top;
     background-size: cover;
     background-color: #FF9933;
 }
@@ -408,7 +418,7 @@ dl dd a{
     text-align: left;
     width: 100%;
     font-size: 16px;
-    background-position: center top;
+    background-position: left top;
     background-image: url(img/footer1.svg);
     background-size: cover;
 }
@@ -442,10 +452,45 @@ dl dd a{
     text-decoration: none;
     color: #fff;
 }
+/*
+@media screen and (max-width: 576px) {
+    .footer-index{
+        background-position: left;
+    }
+    .container-footer-index{
+        margin-top: 100px;
+    }
+    .footer{
+        background-position: left;
+    }
+    .container-footer{
+        margin-top: 100px;
+    }
+}*/
 
 @media screen and (max-width: 768px){
 
+    header{
+        height:650px;
+        background-position: left bottom;
+    }
+
+    .textos{
+        padding-top: 150px;
+    }
+
+    .textos>h1{
+        font-size:40px;
+    }
+      
+    .textos>h2{
+        font-size: 20px; 
+    }
+
     .container-col{
+        display: block;
+    }
+    .container-col-1{
         display: block;
     }
     .col1{
@@ -455,7 +500,6 @@ dl dd a{
     .col-block{
         width: 100%;
     }
-
     .container-filas{
         display: block;
     }
