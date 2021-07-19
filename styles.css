@@ -375,6 +375,45 @@ dl dd a{
     padding: 0;
 }
 
+.container-col-card{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-card{
+    display: flex;
+    height: auto;
+    align-items: center;
+    padding-right: 10px;
+    justify-content: space-between;
+}
+
+.card{
+    
+    width: 100%; 
+    height: auto;
+    align-items: center;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #999;
+    padding: 10px 10px;
+}
+
+
+.container-card .card img{
+    width: 100%;
+}
+
+.container-col-card a{
+    text-decoration: none;
+    color: #575757;
+}
+
 
 .footer-index {
     padding: 20px 0;
@@ -452,21 +491,7 @@ dl dd a{
     text-decoration: none;
     color: #fff;
 }
-/*
-@media screen and (max-width: 576px) {
-    .footer-index{
-        background-position: left;
-    }
-    .container-footer-index{
-        margin-top: 100px;
-    }
-    .footer{
-        background-position: left;
-    }
-    .container-footer{
-        margin-top: 100px;
-    }
-}*/
+
 
 @media screen and (max-width: 768px){
 
@@ -489,6 +514,29 @@ dl dd a{
 
     .container-col{
         display: block;
+    }
+
+    .container-bloque{
+        display: block;
+    }
+
+    .container-col-card{
+        display: block;
+    }
+
+    .container-card{
+        display: block;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .card{
+        display: block;
+        width: auto;
+    }
+    .container-card .card img{
+        width: 150px;
     }
     .container-col-1{
         display: block;
@@ -527,6 +575,7 @@ dl dd a{
         width: 50%; 
     }
 
+    
     .container-footer-index{
         padding-left: 5%;
         display: block;
