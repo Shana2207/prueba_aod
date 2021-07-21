@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Rajdhani&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+
     <script src="https://kit.fontawesome.com/8ad784097e.js" crossorigin="anonymous"></script>
 
 </head>
@@ -41,7 +42,7 @@
             <div class="container-filas-celeste" style="justify-content:center;">
                 <div class="container-celeste-form">
                     <h2 style="color:#FF9933;"><b>contÁctAnos</b></h2>
-                    <form method="post" class="contactForm">
+                    <form class="contactForm" id="contactForm" name="contactForm">
                         <ul>
                             <li>
                                 <input type="text" class="form-control" id="name" name="user_name" placeholder="Nombre">
@@ -50,15 +51,14 @@
                                 <input type="email" class="form-control" id="mail" name="user_mail" placeholder="Correo electrónico">
                             </li>
                             <li>
-                                <input type="text" class="form-control" id="name" name="user_phone" placeholder="Teléfono">
+                                <input type="text" class="form-control" id="phone" name="user_phone" placeholder="Teléfono">
                             </li>
                             <li>
-                                <textarea id="msg" class="textarea" name="user_message" placeholder="Mensaje"></textarea>
+                                <textarea id="message" class="textarea" name="user_message" placeholder="Mensaje"></textarea>
                             </li>
                         </ul>
                         <div class="boton">
 							<input type="submit" value="Enviar">
-							<div class="submitting"></div>
 						</div>
                     </form>
                 </div>
@@ -93,8 +93,32 @@
             </div>
         </div>
     </footer>
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCGWCegPQ07xxCHNMZaE4yOKR4jt62L9M0",
+    authDomain: "prueba-aod-959c7.firebaseapp.com",
+    projectId: "prueba-aod-959c7",
+    storageBucket: "prueba-aod-959c7.appspot.com",
+    messagingSenderId: "798525135738",
+    appId: "1:798525135738:web:0599ed1223527a2f3254c3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
     <script src="js/filtro.js"></script>
-</body>
+    <script src="js/getForm.js"></script>
+
 </html>
