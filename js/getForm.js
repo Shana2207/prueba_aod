@@ -19,6 +19,9 @@ contactForm.addEventListener('submit', async e => {
     const message = todoForm['message'].value;
 
     await create(name, mail, phone, message); // Llamo a mi función create
-
+    alert('Enviado exitosamente');
     todoForm.reset(); // Reseteamos los campos
 });
+
+
+
