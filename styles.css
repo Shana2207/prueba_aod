@@ -378,12 +378,11 @@ dl dd a{
     padding-bottom: 32px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .container-card{
     display: flex;
-    height: auto;
+    height: 100%;
     align-items: center;
     padding-right: 10px;
     justify-content: space-between;
@@ -392,14 +391,21 @@ dl dd a{
 .card{
     
     width: 100%; 
-    height: auto;
+    height: 100%;
     align-items: center;
     padding: 0;
     border-radius: 10px;
     box-shadow: 2px 2px 10px #999;
     padding: 10px 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.container img{
+    width: 100%; 
+}
 
 .container-card .card img{
     width: 100%;
@@ -408,6 +414,7 @@ dl dd a{
 .container-col-card a{
     text-decoration: none;
     color: #575757;
+    width: 20%;
 }
 
 
