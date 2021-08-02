@@ -67,6 +67,7 @@ header{
 nav{
     width: 100%;
     position: fixed;
+    z-index: 9;
 }
   
 .nav1{
@@ -324,6 +325,15 @@ dl dd a{
     align-items: center;
 }
 
+.container-filas-about{
+    height: auto;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    display:flex;
+    justify-content: space-between;
+}
+
 .container-filas{
     width: 20%;
     height: auto;
@@ -481,6 +491,27 @@ dl dd a{
 .container-footer dl dd a{
     text-decoration: none;
     color: #fff;
+}
+
+.container-client{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container-client > div{
+    display: flex;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.container-client > div > img{
+    max-width: 120px;
+    max-height: 140px;
+    min-width: 120px;
+    filter: grayscale(1);
 }
 
 
