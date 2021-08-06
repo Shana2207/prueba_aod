@@ -564,78 +564,51 @@ label {
 
 
 /* footer principal */
-
-
-.footer-index {
-    padding: 20px 0;
-    text-align: left;
-    width: 100%;
-    font-size: 16px;
-    
-    background-image: url(img/footer.png);
-    background-position: left top;
-    background-size: cover;
+.footer-blanco {
+    padding: 20px;
     background-color: #FF9933;
+    background-position: left top;
+    background-image: url(img/footer-blanco.png);
+    background-size: cover;
 }
 
-.container-footer-index{
-    padding-left: 10%;
+.container-footer-blanco{
+    margin-top: 100px;
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    margin-top: 150px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.block-foo-1-index{
-    width: 20%;
-    height: auto;
+.container-footer-blanco dl dd a{
+    text-decoration: none;
+    color: #575757;
 }
 
-.block-foo-2-index{
-    width: 20%;
-    height: auto;
-    margin-top: 80px;
-}
-.block-foo-3-index{
-    width: 30%;
-    height: auto;
-    margin-top: 190px;
-}
-
+/* footer secundario */
 .footer {
     color: #fff;
-    padding: 20px 0;
-    text-align: left;
-    width: 100%;
-    font-size: 16px;
+    padding: 20px;
     background-position: left top;
-    background-image: url(img/footer1.svg);
+    background-image: url(img/footer-naranja.svg);
     background-size: cover;
 }
 
 .container-footer{
-    color: #fff;
-    padding-left: 10%;
+    margin-top: 100px;
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    margin-top: 150px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.block-foo-1{
-    width: 20%;
-    height: auto;
-}
-
-.block-foo-2{
-    width: 20%;
-    height: auto;
-    margin-top: 80px;
-}
-.block-foo-3{
-    width: 30%;
-    height: auto;
-    margin-top: 190px;
+.bloc-footer{
+    display: block;
+    min-width: 300px;
+    max-width: 300px;
+    text-align: left;
+    font-size: 16px;
+    align-self: flex-end;
 }
 
 .container-footer dl dd a{
@@ -651,13 +624,6 @@ dl{
 dd{
     margin-inline-start: 15px;
 }
-
-dl dd a{
-    text-decoration: none;
-    color: #575757;
-}
-
-
 
 
 
@@ -686,42 +652,5 @@ dl dd a{
       
     .textos>h2{
         font-size: 20px; 
-    }
-
-
-
-
-
-    
-    .container-footer-index{
-        padding-left: 5%;
-        display: block;
-    }
-    .block-foo-1-index{
-        width: 100%;
-    }
-    .block-foo-2-index{
-        margin-top: 30px;
-        width: 100%;
-    }
-    .block-foo-3-index{
-        margin-top: 30px;
-        width: 100%;
-    }
-
-    .container-footer{
-        padding-left: 5%;
-        display: block;
-    }
-    .block-foo-1{
-        width: 100%;
-    }
-    .block-foo-2{
-        margin-top: 30px;
-        width: 100%;
-    }
-    .block-foo-3{
-        margin-top: 30px;
-        width: 100%;
     }
 }
