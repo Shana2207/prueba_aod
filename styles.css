@@ -502,6 +502,9 @@ nav .enlaces a:hover{
 
 
 /* seccion del formulario */
+.formulario{
+    padding: 50px;
+}
 .container-form{
     padding: 50px;
     margin: auto;
