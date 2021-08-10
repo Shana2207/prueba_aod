@@ -29,7 +29,7 @@ function menus(){
 
 function apertura(){
     if(cerrado){
-        menu.style.width = '20vw';
+        menu.style.width = '200px';
         menu.style.top = '0px';
         cerrado = false;
     }else{
