@@ -120,6 +120,7 @@ nav{
   
 .enlaces{
     position: fixed;
+    z-index: 1;
     background: #ff9933;
     left: 0;
     height: 100%;
@@ -129,7 +130,7 @@ nav{
     box-shadow: 0 0 16px #02020299;
 }
 
-.enlaces::after{
+.openmenu::before{
     content: '';
     display: block;
     pointer-events: none;
@@ -139,9 +140,8 @@ nav{
     position: fixed;
     z-index: 0;
     top: 0;
+    left: 0;
 }
-
-
 
 .enlaces a{
     display: block;

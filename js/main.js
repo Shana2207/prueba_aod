@@ -6,7 +6,9 @@ let abrir = document.getElementById('open');
 let botones = document.getElementsByClassName('btn-header');
 let cerrado = true;
 let logo = document.getElementById('logo');
+let contnav = document.getElementsByClassName('contenedor-nav')[0];
 
+console.info(contnav);
 function menus(){
     let Desplazamiento_Actual = window.pageYOffset;
 
@@ -28,16 +30,15 @@ function menus(){
 }
 
 function apertura(){
-    if(cerrado){
-        menu.classList.add("openMenu");
+    if(cerrado){        
         menu.style.width = '200px';
         menu.style.top = '0px';
         cerrado = false;
-    }else{
+    }else{        
         menu.style.width = '0%';
         menu.style.top = '0px';
         menu.style.overflow = 'hidden';
-        menu.removeClass("openMenu");
+        
         cerrado = true;
     }
 }
@@ -50,9 +51,10 @@ window.addEventListener('load', function(){
 window.addEventListener('click',function(e){
     if(cerrado==false){
         let span = document.querySelector('span');
-        if(e.target !== span && e.target !== abrir){
+        if(e.target !== span && e.target !== abrir && e.target !== menu){
             menu.style.width = '0%';
             menu.style.overflow = 'hidden';
+            contnav.classList.remove('openmenu');
             cerrado = true;
         }
     }
@@ -68,5 +70,6 @@ window.addEventListener('resize', function(){
     }
 });
 abrir.addEventListener('click', function(){
+    contnav.classList.add('openmenu');
     apertura();
 });
