@@ -29,6 +29,7 @@ function menus(){
 
 function apertura(){
     if(cerrado){
+        menu.classList.add("openMenu");
         menu.style.width = '200px';
         menu.style.top = '0px';
         cerrado = false;
@@ -36,6 +37,7 @@ function apertura(){
         menu.style.width = '0%';
         menu.style.top = '0px';
         menu.style.overflow = 'hidden';
+        menu.removeClass("openMenu");
         cerrado = true;
     }
 }

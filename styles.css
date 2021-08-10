@@ -129,6 +129,20 @@ nav{
     box-shadow: 0 0 16px #02020299;
 }
 
+.enlaces::after{
+    content: '';
+    display: block;
+    pointer-events: none;
+    background-color: #00000042;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+}
+
+
+
 .enlaces a{
     display: block;
     width: 100%;
