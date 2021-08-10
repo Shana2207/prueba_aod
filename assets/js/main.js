@@ -18,14 +18,14 @@ function menus(){
         nav.style.transition = '1s';
         menu.style.top = '0px';
         abrir.style.color = '#fff';
-        logo.setAttribute("src", "img/logoblanco.svg");
+        logo.setAttribute("src", "assets/img/logoblanco.svg");
     }else{
         nav.classList.remove('nav1');
         nav.className = ('nav2');
         nav.style.transition = '1s';
         menu.style.top = '0px';
         abrir.style.color = '#FF9933';
-        logo.setAttribute("src", "img/logonaranja.svg");
+        logo.setAttribute("src", "assets/img/logonaranja.svg");
     }
 }
 
